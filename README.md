@@ -1,2 +1,2 @@
-# rpS3_tracker
-tracking of assembled rpS3 genes across metagenomes
+# rpS3_trckr
+for tracking of assembled rpS3 genes across metagenomes
