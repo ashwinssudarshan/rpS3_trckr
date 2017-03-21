@@ -28,3 +28,5 @@ all_rpS3.fa contains protein sequences of all rpS3 genes detected in the samples
 OTU_table_from_assembly_coverage.csv is a comma-delimted table of all OTU clusters based on rpS3 sequences detected in the asesmblies. 0 indidcate that the rpS3 sequences was not present in the assembly.
 final_rpS3_scaffolds.fna contains nucleotide sequences of the longest scaffolds per OTU cluster.
 scaff2cluster.txt contains a lookup for the representative scaffolds in each cluster.
+
+Questions? alexander.j.probst[at]gmail.com
