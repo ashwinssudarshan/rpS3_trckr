@@ -20,9 +20,11 @@ HMM databases provided in this repository
 Set path for HMM databases and the toolbox in line 13 and 14 of the script before using it!
 
 How it works:
-The bash script finds rpS3 sequences of Archaea, Bacteria, and Eukaryotes in metagenome assemblies and clusters them at 99% identity, which corresponds to species level (Sharon et al., 2013 https://www.ncbi.nlm.nih.gov/pubmed/22936250).
+The bash script finds rpS3 sequences of Archaea, Bacteria, and Eukaryotes in metagenome assemblies. This approach is based on the provided HMM profiles generated from Hug et al (https://www.ncbi.nlm.nih.gov/pubmed/27572647). The rpS3 sequences are then clustered at 99% identity, which corresponds to species level (Sharon et al., 2013 https://www.ncbi.nlm.nih.gov/pubmed/22936250), and presented as an OTU table.
+At the same time, the longest scaffold for each cluster, on which the rpS3 gene was found, is extracted. This can then be used for further analyses, e.g., read mapping for abundance tracking beyond assembly-based approaches.
 
 Output files:
 all_rpS3.fa contains protein sequences of all rpS3 genes detected in the samples.
 OTU_table_from_assembly_coverage.csv is a comma-delimted table of all OTU clusters based on rpS3 sequences detected in the asesmblies. 0 indidcate that the rpS3 sequences was not present in the assembly.
 final_rpS3_scaffolds.fna contains nucleotide sequences of the longest scaffolds per OTU cluster.
+scaff2cluster.txt contains a lookup for the representative scaffolds in each cluster.
