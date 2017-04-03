@@ -108,7 +108,7 @@ for batch in $(ls -1 batch.*); do
   wait
 done
 rm all_genes.txt batch.*
-ruby /home/ajp/apps/.scripts/ScaffCov2OTU.rb
+ruby ${tblx}/ScaffCov2OTU.rb
 cd ..
 
 # create a scaff2OTU file
