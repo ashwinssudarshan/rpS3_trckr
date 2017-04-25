@@ -12,6 +12,7 @@ fi
 
 # path to tlbx
 tblx=/home/ajp/apps/fasta
+# path to folder with HMMs
 hmm=/home/ajp/apps/.databases/rpS3_HMM
 
 # Input variable
